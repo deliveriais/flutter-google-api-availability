@@ -17,7 +17,7 @@ class GoogleApiAvailabilityAndroid extends GoogleApiAvailabilityPlatform {
   /// Optionally, you can also show an error dialog if the connection status is
   /// not [GooglePlayServicesAvailability.success].
   @override
-  Future<GooglePlayServicesAvailability> checkGooglePlayServicesAvailability(
+static  Future<GooglePlayServicesAvailability> checkGooglePlayServicesAvailability(
       [bool showDialogIfNecessary = false]) async {
     final availability = await _methodChannel.invokeMethod(
       'checkPlayServicesAvailability',
