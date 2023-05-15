@@ -45,7 +45,7 @@ abstract class GoogleApiAvailabilityPlatform extends PlatformInterface {
   ///
   /// Optionally, you can also show an error dialog if the connection status is
   /// not [GooglePlayServicesAvailability.success].
-  Future<GooglePlayServicesAvailability> checkGooglePlayServicesAvailability([
+  static Future<GooglePlayServicesAvailability> checkGooglePlayServicesAvailability([
     bool showDialogIfNecessary = false,
   ]) {
     throw UnimplementedError(
