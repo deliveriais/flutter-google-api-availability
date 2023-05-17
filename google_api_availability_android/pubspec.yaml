@@ -17,7 +17,11 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  google_api_availability_platform_interface: ^1.0.0
+  google_api_availability_platform_interface:
+    git:
+      path: google_api_availability_platform_interface
+      ref: 1ebed7a8874f1581fcf24adaa9483cd62662734d
+      url: https://github.com/deliveriais/flutter-google-api-availability
 
 dev_dependencies:
   flutter_test:
